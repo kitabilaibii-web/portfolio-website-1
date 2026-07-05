@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Premium Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-zinc-950">
+
+    <!-- SECTION 1: HEADER / NAVBAR -->
+    <nav class="border-b border-zinc-900 bg-zinc-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600">LL PORTFOLIO</span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-amber-400">Home</a>
+                <a href="about.html" class="text-zinc-400 hover:text-amber-400 transition-colors">About</a>
+                <a href="skills.html" class="text-zinc-400 hover:text-amber-400 transition-colors">Skills</a>
+                <a href="projects.html" class="text-zinc-400 hover:text-amber-400 transition-colors">Projects</a>
+                <a href="contact.html" class="text-zinc-400 hover:text-amber-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-zinc-400 hover:text-amber-400">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-amber-400">Home</a>
+            <a href="about.html" class="block text-zinc-400">About</a>
+            <a href="skills.html" class="block text-zinc-400">Skills</a>
+            <a href="projects.html" class="block text-zinc-400">Projects</a>
+            <a href="contact.html" class="block text-zinc-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- SECTION 2: HERO SECTION -->
+    <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between gap-12 w-full">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <span class="text-amber-400 text-sm font-semibold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Welcome to my space</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white">Hi, I am a <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Web Developer</span></h1>
+            <p class="text-zinc-400 max-w-lg text-lg">Main modern aur high-quality websites design karti hoon jo har screen par perfect chalti hain.</p>
+            <div class="pt-4 flex justify-center md:justify-start gap-4">
+                <a href="projects.html" class="bg-gradient-to-r from-amber-500 to-yellow-600 text-zinc-950 font-semibold px-6 py-3 rounded-lg shadow-lg hover:brightness-110 transition-all">View My Work</a>
+                <a href="contact.html" class="border border-zinc-700 hover:border-amber-500 hover:text-amber-400 px-6 py-3 rounded-lg font-medium transition-all">Contact Me</a>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="relative bg-zinc-900 rounded-full w-64 h-64 md:w-80 md:h-80 border-4 border-amber-500/40 shadow-2xl overflow-hidden">
+                <img src="images/profile.jpg" alt="Profile Image" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ABOUT PREVIEW -->
+    <section class="border-t border-zinc-900 bg-zinc-900/10 py-16 w-full">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-4">
+                <h2 class="text-3xl font-bold text-white">About Me</h2>
+                <div class="h-1 w-12 bg-amber-500 rounded-full"></div>
+                <p class="text-zinc-400 leading-relaxed pt-2">
+                    Mera naam ek web developer hai aur mujhe creative layouts banana pasand hai. Main modern frontend technologies ka istemal kar ke clean aur user-friendly platforms design karti hoon jo business ko grow karne mein madad karte hain.
+                </p>
+                <div class="pt-2">
+                    <a href="about.html" class="text-amber-400 hover:text-amber-300 font-medium inline-flex items-center gap-2">Read More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SKILLS PREVIEW -->
+    <section class="border-t border-zinc-900 py-16 w-full">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-2">My Tech Stack</h2>
+            <div class="h-1 w-12 bg-amber-500 rounded-full mb-8"></div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex items-center space-x-3"><i class="fa-brands fa-html5 text-amber-500 text-xl"></i><span class="font-medium">HTML5</span></div>
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex items-center space-x-3"><i class="fa-brands fa-css3-alt text-amber-500 text-xl"></i><span class="font-medium">CSS3</span></div>
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex items-center space-x-3"><i class="fa-brands fa-js text-amber-500 text-xl"></i><span class="font-medium">JavaScript</span></div>
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex items-center space-x-3"><i class="fa-solid fa-palette text-amber-500 text-xl"></i><span class="font-medium">Tailwind CSS</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FEATURED PROJECTS -->
+    <section class="border-t border-zinc-900 bg-zinc-900/10 py-16 w-full">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-2">Featured Projects</h2>
+            <div class="h-1 w-12 bg-amber-500 rounded-full mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-amber-500/40 transition-all">
+                    <h3 class="text-xl font-semibold text-white mb-2">E-Commerce Web Hub</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Ek responsive online store ka layout jo modern shopping experience provide karta hai.</p>
+                    <a href="projects.html" class="text-amber-400 text-sm font-medium">View Project Details &rarr;</a>
+                </div>
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-amber-500/40 transition-all">
+                    <h3 class="text-xl font-semibold text-white mb-2">Social Blog Platform</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Articles aur daily stories manage karne ke liye ek behtareen minimalist blog design.</p>
+                    <a href="projects.html" class="text-amber-400 text-sm font-medium">View Project Details &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Reusable) -->
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-8 text-center text-sm text-zinc-500 w-full">
+        <p>&copy; 2026 LL Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
